@@ -12,7 +12,7 @@ app.use(cors())
 
 
 
-const PORT = process.env.PORT 
+const PORT = process.env.PORT || 5001
 const URI = process.env.MONGO_URL
 if(!URI){
     console.log("Mongo DB URL is not defined in .env file ")
